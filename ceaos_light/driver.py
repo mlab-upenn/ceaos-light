@@ -1,7 +1,7 @@
 import time
 import json
 import zmq
-from .apogee import Quantum
+from apogee import Quantum
 
 
 def main():

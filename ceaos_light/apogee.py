@@ -42,7 +42,7 @@ class Quantum(object):
 
         try:
 
-            self.quantum.write(READ_CALIBRATION.encode())
+            self.quantum.write(READ_CALIBRATION.encode('latin1'))
 
             multiplier = self.quantum.read(5)[1:]
 
@@ -112,7 +112,7 @@ class Quantum(object):
 
             try:
 
-                self.quantum.write(GET_VOLT.encode())
+                self.quantum.write(GET_VOLT.encode('latin1'))
 
                 response = self.quantum.read(5)[1:]
 

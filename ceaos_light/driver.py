@@ -7,7 +7,7 @@ from apogee import Quantum
 def main():
     context = zmq.Context()
     socket = context.socket(zmq.REQ)
-    socket.connect("tcp://10.103.105.181:23267")
+    socket.connect("tcp://158.130.113.109:23267")
     time.sleep(2)
     light = Quantum()
 

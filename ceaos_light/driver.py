@@ -15,7 +15,7 @@ def main():
         payload = json.dumps(
             {
                 "action": "recv_value",
-                "cea-addr": "farm1.env1.bed1.light",
+                "cea-addr": "farm1.env1.bed1.light1",
                 "payload": {
                     "light": light.get_micromoles()
                 },
